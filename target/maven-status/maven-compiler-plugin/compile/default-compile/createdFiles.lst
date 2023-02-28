@@ -1,8 +1,0 @@
-com/amazonaws/services/kinesisanalytics/OutPlayer.class
-com/amazonaws/services/kinesisanalytics/S3InputS3OutputFilter.class
-com/amazonaws/services/kinesisanalytics/Player.class
-com/amazonaws/services/kinesisanalytics/S3InputS3Output.class
-com/amazonaws/services/kinesisanalytics/S3StreamingSinkJobTransform.class
-com/amazonaws/services/kinesisanalytics/S3StreamingSinkJob.class
-com/amazonaws/services/kinesisanalytics/S3Job.class
-com/amazonaws/services/kinesisanalytics/S3Job2.class
