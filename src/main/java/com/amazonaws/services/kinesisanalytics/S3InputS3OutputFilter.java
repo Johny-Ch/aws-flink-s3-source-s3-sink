@@ -10,7 +10,7 @@ public class S3InputS3OutputFilter {
 
         ExecutionEnvironment executionEnvironment = ExecutionEnvironment.getExecutionEnvironment();
 
-        DataSource<Player> dataSource = executionEnvironment.readCsvFile("s3://ast-poc-bucket/input/")
+        DataSource<Player> dataSource = executionEnvironment.readCsvFile("s3://ast-poc-bucket/kda/input/")
                                                         .pojoType(Player.class,
                                                         "player_id","player_url","fifa_version","fifa_update","fifa_update_date",
                                                         "short_name","long_name","player_positions","overall","potential","value_eur",
