@@ -2,3 +2,5 @@
 Refer to S3InputS3OutputFilter.java
 This class will use S3 bucket as source/input and S3 bucket as destination/sink/ouutput
 Flink S3 source
+
+mvn clean package -Dflink.version=1.15.3

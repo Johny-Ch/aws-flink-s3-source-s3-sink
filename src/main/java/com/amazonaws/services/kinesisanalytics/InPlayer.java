@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class Player {
+public class InPlayer {
     private String player_id;
 
     private String player_url;

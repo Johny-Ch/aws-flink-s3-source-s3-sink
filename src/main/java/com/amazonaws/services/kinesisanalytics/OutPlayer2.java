@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class OutPlayer {
+public class OutPlayer2 {
     private String player_id;
 
     private String short_name;
@@ -23,8 +23,6 @@ public class OutPlayer {
     private String wage_eur;
 
     private String age;
-
-    private String dateOfBirth;
 
     private String height_cm;
 
@@ -75,13 +73,6 @@ public class OutPlayer {
     private String real_face;
 
     private String release_clause_eur;
-
-    public void setRelease_clause_eur(String release_clause_eur) {
-        while (release_clause_eur.length() < 10) {
-            release_clause_eur = release_clause_eur + "0";
-        }
-        this.release_clause_eur = release_clause_eur;
-    }
 
     private String player_tags;
 
@@ -169,7 +160,7 @@ public class OutPlayer {
 
     private String goalkeeping_speed;
 
-    public OutPlayer(InPlayer inPlayer){
+    public OutPlayer2(InPlayer inPlayer){
         player_id = inPlayer.getPlayer_id();
         short_name = inPlayer.getShort_name();
         long_name = inPlayer.getLong_name();
@@ -179,7 +170,6 @@ public class OutPlayer {
         value_eur = inPlayer.getValue_eur();
         wage_eur = inPlayer.getWage_eur();
         age = inPlayer.getAge();
-        dateOfBirth = inPlayer.getDob();
         height_cm = inPlayer.getHeight_cm();
         weight_kg = inPlayer.getWeight_kg();
         league_id = inPlayer.getLeague_id();
@@ -205,6 +195,9 @@ public class OutPlayer {
         body_type = inPlayer.getBody_type();
         real_face = inPlayer.getReal_face();
         release_clause_eur = inPlayer.getRelease_clause_eur();
+        while(release_clause_eur.length() < 10) {
+            release_clause_eur = inPlayer.getRelease_clause_eur() + "0";
+        }
         player_tags = inPlayer.getPlayer_tags();
         player_traits = inPlayer.getPlayer_traits();
         pace = inPlayer.getPace();

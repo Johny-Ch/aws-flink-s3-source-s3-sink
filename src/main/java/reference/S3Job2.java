@@ -1,4 +1,4 @@
-package com.amazonaws.services.kinesisanalytics;
+package reference;
 
 import org.apache.flink.api.common.serialization.SimpleStringEncoder;
 import org.apache.flink.api.common.typeinfo.BasicTypeInfo;
